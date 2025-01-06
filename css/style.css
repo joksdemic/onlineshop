@@ -79,3 +79,78 @@ body {
     margin-top: 10px;
 }
 
+
+.calendar {
+    background-color: rgba(248, 248, 248, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #cee0eb;
+    overflow: hidden;
+    width: 30%;
+    height: 440px;
+    color: #003f7f;
+    padding: 20px;
+    cursor: default;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+}
+    
+#month-year {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#prevv:hover,
+#nextt:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+    
+.days {
+    height: 250px;
+}
+
+.weekdays div, .days div {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.days div {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.days div:hover {
+    background-color: #8597af;
+    color: white;
+}
+
+.days .today {
+    background-color: #003f7f;
+    color: white;
+}
+
+.today:hover {
+        transform: scale(1.2);
+}
+
+.days .fade {
+    color: #555;
+}
