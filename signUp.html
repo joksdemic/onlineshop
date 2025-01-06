@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Registrujte se</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><img src="image/logo1.jpg" alt="Logo"></div>
+        <ul class="container ul-reset">
+          <li><a href='index.html'>Home</a></li>
+          <li class='droppable'>
+            <a href='shop.html'>Shop</a>
+            <li><a href='signUp.html'>Sign Up</a></li>
+            <li><a href='login.html'>Log in</a></li>
+          </li></ul>
+      </nav>
+
+      <div class="c">
+        <div class="container-sign">
+            <div class="progress-bar" style="margin-top: 10px;">
+                <div class="step">
+                    <p>Ime i prezime</p>
+                    <div class="bullet">
+                        <span>1</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Kontakt</p>
+                    <div class="bullet">
+                        <span>2</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Datum rođenja</p>
+                    <div class="bullet">
+                        <span>3</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Kreiranje naloga</p>
+                    <div class="bullet">
+                        <span>4</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+            </div>
+            <div class="form-outer">
+                <form action="#" id="signUpForm">
+                    <div class="page slide-page">
+                        <div class="field">
+                            <input type="text" id="ime" required placeholder="IME">
+                        </div>
+                        <div class="field">
+                            <input type="text" id="prezime" required placeholder="PREZIME">
+                        </div>
+                        <div class="field">
+                            <button class="firstNext next">Next</button>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="field">
+                            <input type="email" id="email" required placeholder="EMAIL">
+                        </div>
+                        <div class="field">
+                            <input type="tel" id="telefon" placeholder="06xxxxxxxx" required>
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev">Previous</button>
+                            <button class="next-1 next">Next</button>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="field">
+                            <select id="dan" required  style="margin-right: 10px;">
+                                <option value="">Dan</option>
+                            </select>
+        
+                            <select id="mesec" required  style="margin-right: 10px; width: 160px;">
+                                <option value="">Mesec</option>
+                                <option value="1">Januar</option>
+                                <option value="2">Februar</option>
+                                <option value="3">Mart</option>
+                                <option value="4">April</option>
+                                <option value="5">Maj</option>
+                                <option value="6">Jun</option>
+                                <option value="7">Jul</option>
+                                <option value="8">Avgust</option>
+                                <option value="9">Septembar</option>
+                                <option value="10">Oktobar</option>
+                                <option value="11">Novembar</option>
+                                <option value="12">Decembar</option>
+                            </select>
+        
+                            <select id="godina" required  style="margin-right: 10px;">
+                                <option value="">Godina</option>
+                            </select>
+                        </div>
+    
+                        <div class="field">
+                            <select id="pol" required>
+                                <option value="">Izaberite pol</option>
+                                <option value="muski">Muški</option>
+                                <option value="zenski">Ženski</option>
+                            </select>
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-2 prev">Previous</button>
+                            <button class="next-2 next">Next</button>
+                        </div>
+                    </div>
+                    <div class="page" style="margin-top: -30px;">
+                        <div class="field">
+                            <input type="text" id="username" required placeholder="USERNAME">
+                        </div>
+                        <div class="field">
+                            <input type="password" id="password" required placeholder="PASSWORD">
+                        </div>
+                        <div class="field">
+                            <input type="password" id="password2" required placeholder="PONOVITE LOZINKU">
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-3 prev">Previous</button>
+                            <button class="submit">Submit</button>
+                        </div>
+                    </div>
+                    <div class="if">
+                        <p>Ukoliko ste naš korisnik,<a href="login.html"> ulogujte se.</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+  <footer class="footer">
+   <div class="footer-container">
+       <div class="footer-section about">
+           <h2 class="footer-title">About Us</h2>
+           <p>Preduzeće “Orthopedist” se bavi uvozom, prodajom na malo, veliko, kao i internet prodajom i servisiranjem ortopedskih pomagala. Naši proizvodi su namenjeni ljudima svih uzrasta koji su se našli u nepredviđenim životnim okolnostima. Nudimo visok kvalitet po povoljnim cenama.</p>
+       </div>
+
+       <div class="footer-section links">
+           <h2 class="footer-title">Quick Links</h2>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="shop.html">Shop</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="signUp.html">Sign up</a></li>
+               <li><a href="login.html">Log in</a></li>
+           </ul>
+       </div>
+
+       <div class="footer-section social">
+           <h2 class="footer-title">Follow Us</h2>
+           <ul>
+               <li><a href="https://www.facebook.com/"><i class="ri-facebook-fill"></i>Facebook</a></li>
+               <li><a href="https://x.com/"><i class="ri-twitter-fill"></i> Twitter</a></li>
+               <li><a href="https://www.instagram.com/"><i class="ri-instagram-fill"></i> Instagram</a></li>
+               <li><a href="https://www.linkedin.com/"><i class="ri-linkedin-box-fill"></i> LinkedIn</a></li>
+           </ul>
+       </div>
+
+       <div class="footer-section contact">
+           <h2 class="footer-title">Contact Us</h2>
+           <p><strong>Email:</strong> ortopedskapomagala@gmail.com</p>
+           <p><strong>Phone:</strong> 066 372 372</p>
+           <p><strong>Address:</strong> Ignjata Stanimirovića 4a</p>
+       </div>
+   </div>
+
+   <div class="footer-bottom">
+       <p>&copy; 2024 Online Store. All rights reserved.</p>
+   </div>
+</footer>
+<script src="js/signUp.js"></script>
+</body>
+</html>
