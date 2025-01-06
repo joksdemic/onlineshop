@@ -1,0 +1,135 @@
+.listCart .item img,
+.addCart {
+    width: 100%;
+}
+
+.listProduct .item img {
+    width: 90%;
+}
+
+
+.title-shop{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: xx-large;
+    color:  #456794;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.title-shop,
+.quantity,
+.quantity span,
+.button-shop {
+   display: flex;
+}
+
+.white{
+    background-color: white;
+}
+
+/*PRODUCTS LIST*/
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.listProduct .item {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; 
+    transition: all 0.3s ease; 
+    width: 250px;
+    height: 370px;
+}
+
+.listProduct .item,
+.listProduct  .item button {
+    border-radius: 20px;
+}
+
+.listProduct .item:hover {
+    border: 4px solid #456794;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+    
+.listProduct .item img {
+    height: 170px;
+    filter: drop-shadow(0 50px 20px #0009);
+    transition: transform 0.3s ease; 
+}
+
+.listProduct .item:hover img {
+    transform: scale(1.05); 
+}
+
+.listProduct .item:hover .addCart {
+    display: block;
+}
+    
+h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+h2, .price {
+    margin: 10px 0;
+}
+    
+.price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+    
+.item button{
+    background-color: #b0aca4;
+    color: #eee;
+    padding: 5px 10px;
+}
+
+.item button,
+.addCart {
+    margin-top: 10px;
+}
+
+.item button,
+.addCart,
+.cartTab button,
+.button-shop .close,
+.button-shop .checkOut {
+    border: none;
+}
+
+.addCart {
+    display: none;
+    background: linear-gradient(45deg, #456794, #648abb);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    opacity: 0.9;
+}
+
+.addCart:hover {
+    background: linear-gradient(45deg, #456794, #a3b3c9);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.addCart:active {
+    transform: translateY(2px);
+}
+
+.product-image:hover .addCart {
+    display: block;
+}
+
