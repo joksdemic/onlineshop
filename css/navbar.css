@@ -1,0 +1,160 @@
+a {
+    text-decoration: none;
+}
+  
+.container{
+    width: 100%;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+    cursor: default;
+}
+  
+.ul-reset {
+    padding-left: 0;
+     margin-top: 0;
+     margin-bottom: 0;
+    list-style: none;
+}
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #456794;
+    color: white;
+    position: relative;
+}
+  
+.logo img {
+      height: 70px;
+      width: auto;
+      transition: transform 0.3s ease;
+      padding: 10px;
+}
+  
+.logo img:hover {
+    transform: rotate(360deg); 
+    transition: transform 0.6s ease-in-out;
+}
+  
+  
+#w1, #w2, #w3, #wo1, #wo2, #wo3, #st1, #st2, #st3, #b1, #b2, #b3, #h1, #h2, #h3, #c1, #c2 {
+    font-size: 15px;
+    font-weight: 600;
+}
+  
+#c2 {
+    margin-bottom: 60px;
+}
+
+nav > ul > li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 15px;
+    position: relative;
+}
+
+nav > ul > li:first-child {
+    padding-left: 0;
+}
+
+nav > ul > li:last-child {
+    padding-right: 0;
+}
+
+nav > ul > li > a {
+    color: #fff;
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 3px solid transparent;
+}
+
+nav > ul > li:hover > a {
+    color: #acc2d0; 
+    border-bottom: 3px solid #acc2d0;
+}
+  
+.mega-menu {
+    background: #fff;
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 2;
+}
+  
+.mega-menu .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+  
+.mega-menu h3 {
+    color: #acc2d0; 
+    text-transform: uppercase;
+    margin-top: 30px; 
+    font-size: 15px;
+}
+  
+.mega-menu ul {
+    float: left;
+    width: 170px;
+    padding-right: 10px;
+}
+  
+.mega-menu img {
+    width: 100%;
+}
+
+.mega-menu ul:last-child {
+    margin-right: 0;
+}
+
+.mega-menu a {
+    border-bottom: 1px solid #ddd;
+    color: #456794;
+    display: block;
+    padding: 20px 0;
+}
+
+.mega-menu a:hover {
+    color: #acc2d0;
+}
+  
+.droppable {
+    position: static;
+}
+  
+.droppable > a:after {
+    content: ""; 
+    display: inline-block;
+    width: 16px;
+    height: 15px; 
+    background-image: url("https://img.icons8.com/?size=100&id=v2xcJsdCOidU&format=png&color=FFFFFF");
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    margin-left: 6px; 
+    position: relative;
+    top: 1px; 
+}
+  
+.droppable:hover .mega-menu {
+    display: block;
+}
+  
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+  
+.cf:after {
+    clear: both;
+}
+  
+  
