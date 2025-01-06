@@ -154,3 +154,73 @@ body {
 .days .fade {
     color: #555;
 }
+
+.text-main {
+    width: 100%;
+    margin-top: 35px;
+    padding: 40px;
+    background-color: rgba(248, 248, 248, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px #cee0eb;
+}
+
+.text-main p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #667992;
+    text-align: left;
+}
+
+.text-main h2 {
+    font-size: 2rem;
+    color: #002f6c;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #003f7f;
+    padding-bottom: 15px;
+}
+
+.text-main ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.text-main ul li {
+    font-size: 1.1rem;
+    color: #002f6c;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.text-main ul li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+    line-height: 1;
+    color: #002f6c;
+}
+
+.text-main a {
+    color: #0050b3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.text-main a:hover {
+    color: #003f7f; 
+    transform: translateY(-2px);
+}
