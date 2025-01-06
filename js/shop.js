@@ -80,6 +80,88 @@ document.getElementById('prev').addEventListener('click', () => {
 
 addDataToHTML();
 
+const addToCart = (product_id) => {
+    let positionThisProductInCart = cart.findIndex((item) => item.product_id == product_id);
+    
+    if (cart.length <= 0) {
+        cart = [{
+            product_id: product_id,
+            quantity: 1
+        }];
+    } else if (positionThisProductInCart < 0) {
+        cart.push({
+            product_id: product_id,
+            quantity: 1
+        });
+    } else {
+        cart[positionThisProductInCart].quantity++;
+    }
+    
+    updateCartDisplay();
+    updateCartInLocalStorage();
+};
+
+const updateCartDisplay = () => {
+    listCartHTML.innerHTML = '';
+    let totalQuantity = 0;
+
+    if (cart.length > 0) {
+        cart.forEach(item => {
+            totalQuantity += item.quantity;
+            let newItem = document.createElement('div');
+            newItem.classList.add('item');
+            newItem.dataset.id = item.product_id;
+
+            let product = products.find(p => p.id == item.product_id);
+            
+            newItem.innerHTML = `
+            <div class="image">
+                <img src="${product.image}">
+            </div>
+            <div class="name">${product.name}</div>
+            <div class="totalPrice">${(product.price * item.quantity)} din.</div>
+            <div class="quantity">
+                <span class="minus">-</span>
+                <span>${item.quantity}</span>
+                <span class="plus">+</span>
+            </div>
+        `;
+            listCartHTML.appendChild(newItem);
+        });
+    }
+
+    iconCartSpan.innerText = totalQuantity;  
+};
+
+listCartHTML.addEventListener('click', (event) => {
+    let target = event.target;
+    if (target.classList.contains('minus') || target.classList.contains('plus')) {
+        let product_id = target.closest('.item').dataset.id;
+        let action = target.classList.contains('plus') ? 'plus' : 'minus';
+        changeProductQuantityInCart(product_id, action);
+    }
+});
+
+const changeProductQuantityInCart = (product_id, action) => {
+    let itemIndex = cart.findIndex((item) => item.product_id == product_id);
+    if (itemIndex >= 0) {
+        let item = cart[itemIndex];
+        if (action === 'plus') {
+            item.quantity++;
+        } else if (action === 'minus' && item.quantity > 1) {
+            item.quantity--;
+        } else if (action === 'minus' && item.quantity === 1) {
+            cart.splice(itemIndex, 1);
+        }
+    }
+    updateCartDisplay();
+    updateCartInLocalStorage();
+};
+
+const updateCartInLocalStorage = () => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+};
+
 const initApp = () => {
     
     fetch('products.json')
@@ -96,6 +178,22 @@ const initApp = () => {
 };
 
 initApp();
+
+iconCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+});
+
+closeCart.addEventListener('click', () => {
+    body.classList.toggle('showCart');
+});
+
+document.querySelector('.checkOut').addEventListener('click', function() {
+    if (cart.length === 0) {
+        alert('Vaša korpa je prazna!');
+    } else {
+        window.location.href = 'checkout.html';  
+    }
+});
 
 const scrollBar = document.querySelector('.scroll-bar');
 const scrollContainer = document.querySelector('.scroll-container');
