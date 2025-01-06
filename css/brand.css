@@ -1,0 +1,59 @@
+.panthera-logo img {
+    margin-top: 20px;
+    margin-left: 55px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.content-panthera {
+    display: flex;
+    margin-left: 55px;
+    gap: 20px;
+    margin-bottom: 30px;
+    color: #022149;
+    text-align: left;
+}
+
+.content-p1 {
+    margin-left: 3px;
+}
+
+.content-p2 {
+    margin-right: 55px;
+    border-left: 2px solid rgba(69,103,148,0.5);;
+}
+
+.content-p2 p {
+    margin-left: 20px;
+}
+
+.content-p3, .content-p4 {
+    border-top: 2px solid rgba(69,103,148,0.5);;
+    margin-left: 55px;
+    margin-right: 55px;
+    color: #022149;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.content-moretti {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 20px 20px 20px;
+    gap: 25px;
+    text-align: left;
+}
+
+.moretti img {
+    max-width: 400px;
+    height: 300px;
+}
+
+.content-m1, .content-m2, .content-m3, .content-m4 {
+    border-right: 2px solid rgba(69,103,148,0.5);  
+}
+
+.content-moretti p {
+    margin-right: 10px;
+}
