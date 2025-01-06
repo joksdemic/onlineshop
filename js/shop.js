@@ -52,6 +52,32 @@ const addDataToHTML = () => {
   
 };
 
+function changePage(direction) {
+    const totalPages = Math.ceil(products.length / itemsPerPage); 
+    currentPage += direction; 
+
+    if (currentPage < 1) {
+        currentPage = 1;
+    } else if (currentPage > totalPages) {
+        currentPage = totalPages;
+    }
+
+    addDataToHTML(); 
+    updatePageNumber(); 
+}
+
+function updatePageNumber() {
+    document.getElementById('page-number').textContent = `Strana ${currentPage}`;
+}
+
+document.getElementById('next').addEventListener('click', () => {
+    changePage(1); 
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    changePage(-1);  
+});
+
 addDataToHTML();
 
 const initApp = () => {

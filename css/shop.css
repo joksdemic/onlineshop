@@ -133,3 +133,39 @@ h2, .price {
     display: block;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.pagination button {
+    background-color: #456794;
+    color: white;
+    height: 40px;
+    width: 100px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#prev:hover {
+    background-color: white;
+    color: black;
+    transform: translateX(-10px); 
+}
+
+#next:hover {
+    background-color: white;
+    color: black;
+    transform: translateX(10px); 
+}
+
+.pagination span {
+    font-size: 18px;
+    margin: 0 20px;
+    cursor: default;
+}
+
