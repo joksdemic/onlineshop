@@ -1,3 +1,27 @@
+var modalOverlay = document.querySelector('.modal-overlay');
+var closeBtn = document.querySelector('.close-btn');
+var container = document.querySelector('.container');
+
+function openModal() {
+    modalOverlay.classList.add('show');
+    container.classList.add('blur'); 
+}
+
+function closeModal() {
+    modalOverlay.classList.remove('show'); 
+    container.classList.remove('blur'); 
+}
+
+closeBtn.addEventListener('click', closeModal);
+
+window.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', openModal);
+
 let listProductHTML = document.querySelector('.listProduct');
 let listCartHTML = document.querySelector('.listCart');
 let iconCart = document.querySelector('.icon-cart');
