@@ -1,0 +1,133 @@
+.thank-you-message {
+    text-align: center; 
+    font-size: 30px;
+    color: #fff; 
+    font-weight: bold;
+    margin-top: 20px;
+    z-index: 10; 
+}
+
+.loader {
+    top: 45%;
+    left: 25%;
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 50px;
+    background: linear-gradient(90deg, #4c96e0 50%, #81b2e0 0) right/200% 100%;
+    animation: l21 2s infinite linear;
+    position: relative;
+    z-index: 2;
+}
+
+.loader::before {
+    content: "Hvala na kupovini!!!";
+    color: whitesmoke;
+    padding: 0 5px;
+    background: inherit;
+    background-image: linear-gradient(90deg, #95b5e3 50%, #588cbf 0);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes l21 {
+    100% {
+        background-position: left;
+    }
+}
+
+.succ {
+    background: linear-gradient(to top left, #7f9fc9, #cad9ee);
+    height: 670px;
+    position: relative;
+    overflow: hidden; 
+}
+
+@keyframes ccc-fall {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes ccc-shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(80px);
+    }
+}
+
+.ccc-img {
+    position: fixed;
+    top: -10%;
+    z-index: 1; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation-name: ccc-fall, ccc-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running;
+}
+
+.ccc-img:nth-of-type(1) {
+    left: 1%;
+    animation-delay: 0s, 0s;
+}
+
+.ccc-img:nth-of-type(2) {
+    left: 10%;
+    animation-delay: 1s, 1s;
+}
+
+.ccc-img:nth-of-type(3) {
+    left: 20%;
+    animation-delay: 6s, 0.5s;
+}
+
+.ccc-img:nth-of-type(4) {
+    left: 30%;
+    animation-delay: 4s, 2s;
+}
+
+.ccc-img:nth-of-type(5) {
+    left: 40%;
+    animation-delay: 2s, 2s;
+}
+
+.ccc-img:nth-of-type(6) {
+    left: 50%;
+    animation-delay: 8s, 3s;
+}
+
+.ccc-img:nth-of-type(7) {
+    left: 60%;
+    animation-delay: 6s, 2s;
+}
+
+.ccc-img:nth-of-type(8) {
+    left: 70%;
+    animation-delay: 2.5s, 1s;
+}
+
+.ccc-img:nth-of-type(9) {
+    left: 80%;
+    animation-delay: 1s, 0s;
+}
+
+.ccc-img:nth-of-type(10) {
+    left: 25%;
+    animation-delay: 2s, 0s;
+}
+
+.ccc-img:nth-of-type(11) {
+    left: 65%;
+    animation-delay: 4s, 2.5s;
+}
