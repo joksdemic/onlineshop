@@ -163,3 +163,48 @@ body{
 .login-switch a:hover{
     color: #839fc4;
 }
+
+
+@media (max-width: 425px) {
+    .container-login {
+        width: 90%;
+        padding: 25px 14px;
+    }
+    .login-title {
+        font-size: 25px;
+    }
+  
+    .login-content {
+        width: 100%;
+    }
+  
+    .row {
+        height: 50px;
+        width: 100%;
+    }
+  
+    .row i {
+        width: 39px;
+    }
+  
+    .row input {
+        text-align: left; 
+        padding-left: 50px;
+    }
+  
+    .login-button {
+        height: 50px;
+    }
+}
+  
+@media (max-width: 375px) {
+    .login-title {
+        font-size: 22px;
+    }
+}
+  
+@media (max-width: 320px) {
+    .login-title {
+        font-size: 19px;
+    }
+}

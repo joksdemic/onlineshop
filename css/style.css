@@ -224,3 +224,182 @@ body {
     color: #003f7f; 
     transform: translateY(-2px);
 }
+
+@media (max-width: 1240px) {
+    .assortment {
+        width: 60%;
+        margin: 0 auto;
+        
+    }
+
+    .assortment h2,
+    .text-main h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .assortment p,
+    .text-main p {
+        font-size: 16px;
+    }
+
+    .assortment-img img {
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+    }
+
+    .calendar,
+    .text-main {
+        max-width: 96%;
+        margin: 0 auto;
+    }
+
+    .weekdays {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 980px) {
+    #month-year {
+        font-size: 15px;
+    }
+    .calendar {
+        font-size: 12px;
+        max-height: 400px
+    }
+
+    .assortment {
+        max-height: 400px;
+    }
+   
+    .assortment h2 {
+        font-size: 18px;
+        margin-top: -15px;
+    }
+
+    .assortment p{
+        font-size: 13px;
+    }
+
+    .assortment-right p{
+        font-size: 13px;
+      
+    }
+    
+    .text-main h2 {
+        font-size: 20px;
+    }
+
+    .text-main p {
+        font-size: 13px;
+    }
+
+    .text-main a {
+        font-size: 15px;
+    }
+
+    .text-main ul li {
+        font-size: 13px;
+    }
+
+    .weekdays {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .assortment {
+        width: 96%;
+        margin: 0 auto;
+        
+    }
+
+    .assortment p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .assortment-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .calendar {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-main h2 {
+        font-size: 20px;
+    }
+
+    .text-main p {
+        font-size: 14px;
+    }
+
+} 
+
+@media (max-width: 620px) {
+    .assortment {
+        line-height: 1.5;
+    }
+
+    .assortment h2,
+    .text-main h2 {
+        font-size: 18px;
+    }
+
+    .assortment p,
+    .assortment-right p,
+    .text-main p{
+       font-size: 12px;
+    }
+}
+
+@media (max-width: 476px) {
+    .assortment-img img {
+        display: none;
+    }   
+
+    .assortment h2,
+    .text-main h2 {
+        font-size: 17px;
+    }
+
+    .text-main a {
+        font-size: 13px;
+    }
+
+    .text-main ul li {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .assortment h2,
+    .text-main h2 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .assortment p,
+    .assortment-right p,
+    .text-main p {
+        font-size: 10.5px;
+    }
+
+    .text-main a {
+        font-size: 11px;
+    }
+
+    .text-main ul li {
+        font-size: 10px;
+    }
+}

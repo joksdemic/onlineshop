@@ -447,3 +447,151 @@ body.showCart .footer {
     display: none;
 }
 
+
+@media (max-width: 1240px) {
+    .modal-overlay {
+        max-width: 100%;
+    }
+
+    .container {
+        margin-left:10px;
+    }
+
+    .listProduct .item {
+        max-width: 230px;
+    }
+
+    .modal-content h2 {
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 1024px) { 
+    .listProduct {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .listProduct .item {
+        max-width: 230px;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+
+    .modal-content h2 {
+        margin-top: -20px;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .title-shop {
+        font-size: 24px;
+    }
+
+    body.showCart li {
+        display: none; 
+    }
+
+    body.showCart .listProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }  
+
+    body.showCart .listProduct .item {
+        max-width: 250px;
+    }
+
+    body.showCart .title-shop {
+        font-size: 20px;
+    }
+
+    body.showCart .cartTab h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .listProduct .item {
+        max-width: 175px;
+    }
+
+    .listProduct .item img {
+        width: 100% !important;
+    }
+
+    .listProduct  .item button {
+        font-size: 15px;
+    }
+
+    .listProduct  .item h2 {
+        font-size: 15px;
+    }
+
+    .close-btn {
+        font-size: 30px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+        margin-top: -30px;
+
+    }
+    
+    .modal-content p {
+        font-size: 16px;
+    }
+
+    body.showCart .listProduct {
+        display: flex;
+        flex-direction: column;
+    }  
+
+    body.showCart .container {
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin-left: 20px;
+    }
+    
+    .listProduct {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .listProduct .item {
+        max-width: 200px;
+        
+    }
+
+    .title-shop {
+        font-size: 25px;
+    }
+
+    .listProduct .item h2 {
+        font-size: 16px;
+    }
+
+    .listProduct .item img {
+        width: 100%;
+    }
+
+    .modal-content h2 {
+        font-size: 17px;
+        
+    }
+    
+    .modal-content p {
+        font-size: 14px;
+    }
+
+    .close-btn {
+        font-size: 18px;
+    }
+
+    body.showCart .title-shop {
+        display: none;
+    }
+}

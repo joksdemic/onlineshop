@@ -57,3 +57,41 @@
 .content-moretti p {
     margin-right: 10px;
 }
+
+
+@media (max-width: 1240px) {
+    .panthera-logo {
+        margin-right: 50px;
+    }
+    .panthera-logo img {
+        max-width:100%;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-moretti {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .moretti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-m1, .content-m2, .content-m3 {
+        border-right: none;
+        border-bottom: 2px solid rgba(69,103,148,0.5);  
+    }
+
+    .content-m4 {
+        border-right: none;
+    }
+
+    .content-moretti p {
+        margin-bottom: 10px;
+    }   
+}
