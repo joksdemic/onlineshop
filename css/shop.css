@@ -169,3 +169,24 @@ h2, .price {
     cursor: default;
 }
 
+.scroll-container {
+    width: 8px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    background-color: #e0e0e0; 
+    border-radius: 10px;
+}
+
+.scroll-bar {
+    width: 100%;
+    background-color: #a9c7ef; 
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+}
+
+

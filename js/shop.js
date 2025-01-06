@@ -96,3 +96,64 @@ const initApp = () => {
 };
 
 initApp();
+
+const scrollBar = document.querySelector('.scroll-bar');
+const scrollContainer = document.querySelector('.scroll-container');
+
+let isDragging = false;
+let startY = 0;
+let startTop = 0;
+
+function updateScrollBar() {
+    const containerHeight = scrollContainer.clientHeight; 
+    const contentHeight = document.body.scrollHeight;
+
+    const minScrollBarHeight = 30; 
+    const maxScrollBarHeight = containerHeight * 0.3; 
+    const scrollBarHeight = Math.max(
+        (containerHeight / contentHeight) * containerHeight, 
+        minScrollBarHeight
+    );
+
+    const limitedScrollBarHeight = Math.min(scrollBarHeight, maxScrollBarHeight);
+
+    scrollBar.style.height = `${limitedScrollBarHeight}px`;
+
+    const scrollPosition = (window.scrollY / (contentHeight - containerHeight)) * (containerHeight - limitedScrollBarHeight);
+    scrollBar.style.top = `${scrollPosition}px`;
+}
+
+scrollBar.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startY = e.clientY;
+    startTop = parseInt(window.getComputedStyle(scrollBar).top);
+    document.body.style.userSelect = 'none';  
+});
+
+document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+
+    const distance = e.clientY - startY;  
+    let newTop = startTop + distance;
+
+    const maxTop = scrollContainer.clientHeight - scrollBar.clientHeight;
+    if (newTop < 0) {
+        newTop = 0;
+    } else if (newTop > maxTop) {
+        newTop = maxTop;
+    }
+
+    scrollBar.style.top = `${newTop}px`;
+
+    const pageHeight = document.body.scrollHeight - window.innerHeight;
+    window.scrollTo(0, (newTop / maxTop) * pageHeight);
+});
+
+document.addEventListener('mouseup', () => {
+    isDragging = false;
+    document.body.style.userSelect = '';  
+});
+
+window.addEventListener('scroll', updateScrollBar);
+
+updateScrollBar();
