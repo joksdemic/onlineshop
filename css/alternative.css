@@ -1,0 +1,96 @@
+.ppp {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pp {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+  display: block;
+  width: 421px;
+  height: 400px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  background-color:#456794;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+  
+.pp:hover .overlay {
+  width: 100%;
+  left: 0;
+  border: 1px solid whitesmoke;
+}
+  
+.text-pp {
+  color: white;
+  overflow: hidden;
+}
+
+.heading-pp h1{
+  font-size: 24px;
+  margin: 10px 0 0 20px;
+}
+
+.category-pp h2 {
+  font-size: 20px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.category-pp a{
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.p2 a {
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.category-pp a:hover, .p2 a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9{
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.p1, .p2, .p3, .p4, .p5, .p6, .p7, .p8, .p9, .p10 {
+  margin: 0px 0 0 20px;
+}
+
+.price-pp {
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  color: #456794;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.price-pp p {
+  font-size: 30px;
+  color: #456794;
+}
+
+.description-pd {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.pd1 {
+  margin-top: 10px;
+}
