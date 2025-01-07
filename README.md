@@ -5,18 +5,27 @@
 index.html
 
 *Adding cover image*
+
 *Adding content to index.html*
+
 *Creating and styling calendar*
+
 *Adding calendar functionality*
+
 *Adding content to index.html*
+
 *Creating a drop-down mega menu with all product categories and subcategories*
 
 shop.html
 
 *Using a JavaScript file to fetch products from products.json and display them on shop.html*
+
 *Creating page pagination to display 24 products per page*
+
 *Implementing a scroll-to-top feature to ensure the page scrolls to the top whenever the 'previous' or 'next' button is clicked*
-*Creating and styling scroll bar
+
+*Creating and styling scroll bar*
+
 *Creating and styling a cart tab where all the products we want to buy are stored. We can also change the quatity inside the cart. The 'Add to Cart' button functionality will be implemented to appear only when the cursor hovers over the product container. Inside the cart, we have a checkout button. If we click it while the cart is empty, an alert message appears saying 'Your cart is empty.' However, if the cart is not empty, it redirects us to the checkout.html page.
 *Implementing a modal window to show a customized message for customers*
 
