@@ -26,7 +26,7 @@ shop.html
 
 *Creating and styling scroll bar*
 
-*Creating and styling a cart tab where all the products we want to buy are stored. We can also change the quatity inside the cart. The 'Add to Cart' button functionality will be implemented to appear only when the cursor hovers over the product container. Inside the cart, we have a checkout button. If we click it while the cart is empty, an alert message appears saying 'Your cart is empty.' However, if the cart is not empty, it redirects us to the checkout.html page.
+*Creating and styling a cart tab where all the products we want to buy are stored. We can also change the quatity inside the cart. The 'Add to Cart' button functionality will be implemented to appear only when the cursor hovers over the product container. Inside the cart, we have a checkout button. If we click it while the cart is empty, an alert message appears saying 'Your cart is empty.' However, if the cart is not empty, it redirects us to the checkout.html page.*
 *Implementing a modal window to show a customized message for customers*
 
 checkout.html
