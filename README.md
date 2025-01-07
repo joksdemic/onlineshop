@@ -20,21 +20,27 @@ shop.html
 *Implementing a modal window to show a customized message for customers
 
 checkout.html
+
 *Creating and styling the checkout form. Each field in the form has validation, and it can't be submitted until all validation rules are followed. Once everything is correct and the 'Proceed to Checkout' button is clicked, it will take us to the succeed.html page
 
 succeed.html
+
 *Creating page with Thank you message
 
 singUp.html
+
 *We are creating the signUp.html form with a four-step validation process. We can't move to the next step unless all validation requirements are met
 
 login.html
+
 *Creating and styling log in form
 
 page2.html, page3.html, page4.html, page5.html, page6.html, page7.html, page8.html, page9.html, page10.html, page11.html, page12.html, page13.html, page14.html, page15.html, page16.html, page17.html
+
 *We are creating individual pages for each product subcategory. The product data is fetched from the products.json file
 
 page1Alternative.html
+
 *Creating and styling the product subcategory page in a slightly different way, using an overlay to hide the product description until the mouse hovers over a specific image
 
 Implementing responsive design for the pages
