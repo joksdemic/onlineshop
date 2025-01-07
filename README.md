@@ -1,4 +1,5 @@
 Creating and styling navbar
+
 Creating and styling footer
 
 index.html
