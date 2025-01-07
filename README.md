@@ -2,6 +2,7 @@ Creating and styling navbar
 Creating and styling footer
 
 index.html
+
 *Adding cover image
 *Adding content to index.html
 *Creating and styling calendar
@@ -9,6 +10,7 @@ index.html
 *Adding content to index.html
 
 shop.html
+
 *Using a JavaScript file to fetch products from products.json and display them on shop.html
 *Creating page pagination to display 24 products per page
 *Implementing a scroll-to-top feature to ensure the page scrolls to the top whenever the 'previous' or 'next' button is clicked
